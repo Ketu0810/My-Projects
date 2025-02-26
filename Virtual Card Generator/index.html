@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Business Card Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Business Card Generator</h1>
+        <div class="input-section">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="text" id="job" placeholder="Job Title">
+            <input type="text" id="company" placeholder="Company">
+            <input type="email" id="email" placeholder="Email">
+            <input type="tel" id="phone" placeholder="Phone">
+            <input type="url" id="website" placeholder="Website">
+            
+            <label>Font:</label>
+            <select id="font">
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+            </select>
+
+            <label>Background Color:</label>
+            <input type="color" id="bgColor">
+
+            <label>Text Color:</label>
+            <input type="color" id="textColor">
+
+            <button id="generateCard">Generate Card</button>
+        </div>
+
+        <div class="card-preview">
+            <div id="businessCard">
+                <h2 id="cardName">John Doe</h2>
+                <p id="cardJob">Software Developer</p>
+                <p id="cardCompany">Company XYZ</p>
+                <p id="cardEmail">john@example.com</p>
+                <p id="cardPhone">+1234567890</p>
+                <p id="cardWebsite">www.example.com</p>
+                <div id="qrCode"></div>
+            </div>
+        </div>
+
+        <button id="exportImage">Export as Image</button>
+        <button id="exportPDF">Export as PDF</button>
+    </div>
+
+    <script src="libs/qrcode.min.js"></script>
+    <script src="libs/html2canvas.min.js"></script>
+    <script src="libs/jspdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
