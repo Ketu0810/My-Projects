@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    font-family: 'Indie Flower', cursive;
+    background-color: #fffbec;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://www.transparenttextures.com/patterns/sketchy.png');
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: #fffaf0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 0px #ffae42, 6px 6px 0px #ff5e5b;
+    border: 3px solid #000;
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-shadow: 2px 2px #ffae42;
+}
+
+.journal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+input[type="date"] {
+    width: 50%;
+    padding: 6px;
+    border: 2px dashed #ff5e5b;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    background: #fffbec;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    border: 2px solid #ffae42;
+    border-radius: 10px;
+    font-size: 16px;
+    background: #fff5d7;
+    color: #333;
+    box-shadow: 2px 2px 0px #ff5e5b;
+}
+
+.mood-selection {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.mood {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    background: #ffebc6;
+    box-shadow: 2px 2px 0px #ffae42;
+    transition: transform 0.2s ease-in-out;
+}
+
+.mood:hover,
+.mood.selected {
+    background: #ff5e5b;
+    color: white;
+    transform: scale(1.2);
+}
+
+button {
+    background: #ff5e5b;
+    color: white;
+    border: 2px dashed black;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+    text-shadow: 1px 1px black;
+    box-shadow: 2px 2px 0px #ffae42;
+}
+
+button:hover {
+    background: #ffae42;
+}
+
+@media (max-width: 400px) {
+    .mood {
+        font-size: 24px;
+        padding: 8px;
+    }
+}
