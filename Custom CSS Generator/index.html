@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom CSS Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Custom CSS Generator</h1>
+        
+        <div class="controls">
+            <label>Background Color: <input type="color" id="bgColor"></label>
+            <label>Text Color: <input type="color" id="textColor"></label>
+            <label>Font Size: <input type="number" id="fontSize" value="16"></label>
+            <label>Padding: <input type="number" id="padding" value="10"></label>
+        </div>
+
+        <div class="preview" id="preview">Live Preview</div>
+
+        <textarea id="cssOutput" readonly></textarea>
+        <button id="copyCss">Copy CSS</button>
+        <button id="exportCss">Export CSS</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
