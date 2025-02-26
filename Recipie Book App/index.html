@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📖 Recipe Book</h1>
+        <div class="controls">
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search by ingredient...">
+            </div>
+            
+            
+            <button onclick="openRecipeModal()">➕ Add Recipe</button>
+        </div>
+        
+        <ul id="recipe-list"></ul>
+    </div>
+
+    <!-- Recipe Modal -->
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRecipeModal()">&times;</span>
+            <h2 id="modal-title">Add Recipe</h2>
+            <input type="hidden" id="recipe-id">
+            <input type="text" id="recipe-name" placeholder="Recipe Name">
+            <textarea id="recipe-ingredients" placeholder="Ingredients (comma separated)"></textarea>
+            <textarea id="recipe-instructions" placeholder="Instructions"></textarea>
+            <button onclick="saveRecipe()">Save Recipe</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
