@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Resume Form -->
+        <div class="resume-form">
+            <h2>Resume Builder</h2>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" placeholder="Enter your phone number">
+
+            <label for="skills">Skills</label>
+            <input type="text" id="skills" placeholder="e.g. JavaScript, TypeScript, React">
+
+            <label for="experience">Experience</label>
+            <textarea id="experience" placeholder="Describe your experience"></textarea>
+
+            <label for="education">Education</label>
+            <textarea id="education" placeholder="Enter your education details"></textarea>
+
+            <button id="generate-suggestions">AI Suggestions</button>
+            <button id="save-resume">Save Progress</button>
+            <button id="download-pdf">Download PDF</button>
+        </div>
+
+        <!-- Resume Preview -->
+        <div class="resume-preview" id="resume-preview">
+            <h2 id="preview-name">Your Name</h2>
+            <p id="preview-email">Email: example@gmail.com</p>
+            <p id="preview-phone">Phone: +123456789</p>
+            <h3>Skills</h3>
+            <p id="preview-skills">Your skills here...</p>
+            <h3>Experience</h3>
+            <p id="preview-experience">Your experience here...</p>
+            <h3>Education</h3>
+            <p id="preview-education">Your education details...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="jsPDF.min.js"></script>
+</body>
+</html>
