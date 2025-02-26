@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.clock {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#analog-clock {
+    display: none;
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 50%;
+}
+
+.controls, .alarm {
+    margin-top: 10px;
+}
+
+button, select, input {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: #61dafb;
+    color: black;
+}
